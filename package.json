@@ -1,0 +1,17 @@
+{
+  "name": "weather-forecast",
+  "version": "1.0.0",
+  "description": "pair project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuki,yu",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "eslint": "^8.15.0",
+    "mocha": "^10.0.0"
+  }
+}
