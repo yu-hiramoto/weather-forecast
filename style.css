@@ -1,0 +1,15 @@
+#weatherTable {
+  color: black;
+  border: 1px solid black;
+  /* border-color: black; */
+}
+
+#weatherTable th {
+  border: 5px solid gray;
+  /* border-color: black; */
+}
+
+#weatherTable td {
+  border: 3px solid orange;
+  text-align: center;
+}

@@ -6,6 +6,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/mocha/4.0.1/mocha.min.css"
     />
+
+    <!-- This is the line that loads the stylesheet. -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -34,11 +37,19 @@
         mocha.run();
       }
     </script>
-    <select name="city" id="selectCity">
-      <option value="_">please select city</option>
-      <option value="Tokyo">Tokyo</option>
-      <option value="New York">New York</option>
-    </select>
-    <div id="weatherForm"></div>
+    <h1>世界の天気</h1>
+    <div>
+      <img src="./earth-globe.gif" alt="地球儀" />
+    </div>
+    <table id="weatherTable">
+      <tr>
+        <th>日時</th>
+        <th>東京</th>
+        <th>ニューヨーク</th>
+        <th>ロンドン</th>
+        <th>北極</th>
+        <th>南極</th>
+      </tr>
+    </table>
   </body>
 </html>
