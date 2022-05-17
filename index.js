@@ -36,6 +36,8 @@ class WorldWeather {
       Tokyo: [35.6785, 139.6823],
       "New York": [40.71, -74.01],
       London: [51.5002, -0.1262],
+      Honolulu: [21.1824, -157.5132],
+      "Mt.Everest": [27.5916, 86.5531],
       "North Pole": [90, 0],
       "Sauth Pole": [-90, 0],
     };
@@ -59,7 +61,7 @@ class WorldWeather {
     for (let i = 12; i < this.hourlyTime.length; i = i + 24) {
       const newElement = document.createElement("tr");
       const newDate = document.createElement("td");
-      newDate.innerText = this.hourlyTime[i].replace("T", "  ");
+      newDate.innerHTML = this.hourlyTime[i].replace("T", "<br/>");
       newElement.appendChild(newDate);
       for (let j = 0; j < this.weatherCode.length; j++) {
         const newWeather = document.createElement("td");
@@ -70,5 +72,8 @@ class WorldWeather {
     }
   }
 }
+
+const showHTML = new WorldWeather();
+showHTML.searchWeather();
 
 window.WorldWeather = WorldWeather;

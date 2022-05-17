@@ -31,15 +31,15 @@
     <script src="./tests/test.js"></script>
 
     <!-- Run Mocha -->
-    <script>
+    <!-- <script>
       // Only tests run in real browser, injected script run if options.run == true
       if (navigator.userAgent.indexOf("PhantomJS") < 0) {
         mocha.run();
       }
-    </script>
+    </script> -->
     <h1>世界の天気</h1>
-    <div>
-      <img src="./earth-globe.gif" alt="地球儀" />
+    <div id="globeImage">
+      <img src="./earth-globe.gif" alt="地球儀" id="globe" />
     </div>
     <table id="weatherTable">
       <tr>
@@ -47,6 +47,8 @@
         <th>東京</th>
         <th>ニューヨーク</th>
         <th>ロンドン</th>
+        <th>ホノルル</th>
+        <th>エベレスト</th>
         <th>北極</th>
         <th>南極</th>
       </tr>
